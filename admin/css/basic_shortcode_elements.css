@@ -1,0 +1,516 @@
+/*
+ Basic Shortcode Elements styles
+*/
+
+.myModalShortcodes-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background: #000;
+    opacity: .7;
+    z-index: 159900;
+}
+#myModalShortcodes{
+	position: fixed; 
+	background:#ffffff;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+	max-height: 80vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;    
+    overflow-y: auto;
+	top:100px; 
+	z-index: 159901;
+	border: 1px solid #eee;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.7);
+	box-shadow: 0 5px 15px rgba(0,0,0,.7);
+	display: none;
+}
+#myModalShortcodes h2{
+	border-bottom: 1px solid #eeeeee;	
+}
+.annonce{
+    color: green;
+    font-size: 18px;
+    display: block;
+    clear: both;    
+    margin-bottom: 2em;
+}
+.centerText{
+    text-align: center;
+}
+.btclose:before{
+	position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;    
+    content: "\f158";
+    font: 400 20px/1 dashicons;
+    speak: none;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666;
+}
+
+.icon-shortcodes{
+	font-weight: bold;
+
+}
+.btclose:hover{
+	opacity: 0.6;
+}
+
+.content-shortcodes,
+.content-form-element{    
+    width: 80%;
+    margin: 2.5em 10%;
+    text-align: center;
+
+}
+.content-form-element{
+    text-align: left;
+}
+.element-shortcode{
+    border: 1px solid #8a8989;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1em;
+    width: 60px;
+}
+.element-shortcode img{
+    display: block;
+    clear: both;
+    margin: 0 auto;
+}
+
+.element-shortcode:hover{
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    opacity: 0.7;
+}
+#button span{
+    font-weight: bold;
+}
+
+#last-posts{
+    padding-top: 23px;
+}
+#parallax-image{
+    padding-top: 22px;
+}
+.element-shortcode span{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.separate{
+    width: 230px;
+    height: 2px;
+    text-align: center;
+    margin: 1.5em auto;
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+#content-form{
+    padding: 8px 12px;
+}
+.selected-shortcode-option{
+    margin: 0 0 2.5em 0;
+}
+#full-width-option:before,
+#two-cols-option:before,
+#parallax-image-option:before,
+#table-option:before,
+#last-posts-option:before,
+#button-option:before,
+#space-separation-60-option:before,
+#space-separation-80-option:before{
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+    vertical-align: middle; 
+    background: url(../icons/full-width.png) center no-repeat;
+    opacity: 0.8;
+}
+
+#two-cols-option:before{
+    background: url(../icons/two-cols.png) center no-repeat;
+}
+
+.col1-of-two{    
+    padding: 30px;
+    background: #f9f9f9;
+    margin: 30px 0;
+}
+#parallax-image-option:before{
+    background: url(../icons/parallax-image.png) center no-repeat;
+    height: 25px;
+}
+#table-option:before{
+    background: url(../icons/table3.png) center no-repeat;
+    width: 20px;
+    height: 28px;
+}
+
+#last-posts-option:before{
+    background: url(../icons/last-posts2.png) center no-repeat;
+    width: 50px;
+    height: 25px;
+}
+
+#button-option:before{
+    background: url(../icons/button.png) center no-repeat;
+    width: 40px;
+    height: 18px;    
+}
+#space-separation-60-option:before,
+#space-separation-80-option:before{
+    background: url(../icons/vertical-space-separation.png) center no-repeat;
+}
+.ask-confirm-option{
+    font-weight: bold;
+    text-align: center;
+}
+
+.title-option{
+    margin-left: 5px;
+    font-weight: 600;
+    line-height: 30px;    
+}
+.selected-shortcode-option label,
+#select-image-parallax{
+    display: block;
+    clear: both;
+    font-size: 16px;
+}
+
+#parallax-image-option .meta-image-preview{
+    width: 200px;
+    padding: 0;
+    margin-top: 15px;
+}
+#buttons-form{
+    width: 80%;
+    max-width: 1250px;
+    margin: 2.5em auto;    
+    text-align: center;
+}
+#buttons-form button,
+button#button-close{
+    display: inline-block;    
+    font-size: 14px;
+    padding: 10px 25px;
+    background: #0999d2;
+    border: none;
+    margin: 0 0 0 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+button#button-close{
+    display: block;
+    clear: both;
+    margin: 1.5em auto;
+    background: #9ea1a2;
+    border: none;
+}
+#buttons-form button#bt-cancel{
+    background: #9ea1a2;
+}
+
+#buttons-form button:hover{
+    box-shadow: 0 1px 5px rgba(9,153,210,0.25), 0 1px 5px rgba(0,0,0,0.22);
+    transition: all 0.25s ease-out;
+    background: rgb(9,153,210);
+}
+#buttons-form button#bt-cancel:hover,
+button#button-close:hover{
+    box-shadow: 0 1px 5px rgba(9,153,210,0.25), 0 1px 5px rgba(0,0,0,0.22);
+    transition: all 0.25s ease-out;
+    background: rgba(158, 161, 162, 0.91);
+}
+.content-cols{
+    display: block;
+    clear: both;
+}
+
+.col1,
+.col2{
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.selected-shortcode-option input,
+textarea.descriptioncol{
+    padding: 8px;
+    width: 400px;
+    max-width: 99%;
+    margin-bottom: 15px;
+}
+
+textarea.descriptioncol{
+    display: block;
+}
+
+
+#radio-align-full span,
+#radio-align-two-cols span,
+#radio-align-two-cols2 span,
+#to_include_padding_in_block span,
+#to_include_padding_in_block2 span,
+#share-with-media span,
+#posts-number span,
+#style_color_button .literal,
+#radio-align-button span{
+    display:block;
+    clear: both;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #686868;
+}
+#style_color_button{
+    height: 140px;
+}
+.blockbt{    
+    display: inline-table;
+    height: 140px;
+    padding: 0 15px 0 0;
+}
+.wp-color-result-text{
+    font-size: 11px;
+    margin-top: 0;
+}
+.buttonstyle1{
+
+border: 1px solid;
+padding: 20px;
+margin: 15px auto;
+color: #080808!important;
+font-family: 'Roboto', sans-serif;
+font-size: 19px;
+font-weight: 600;
+font-style: normal;
+display: block;
+max-width: 300px;
+text-align: center;
+
+}
+.buttonstyle1:hover{
+color: #666666!important;
+
+}
+.buttonstyle2{
+    display: block;
+    border: 1px solid;
+    padding: 20px;
+    margin: 15px auto;
+    color: #FFFFFF!important;
+    background: #980316;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.buttonstyle2:hover{
+    opacity: 0.9;
+}
+
+.content-button-color input,
+.content-button-color .wp-picker-container input[type=text].wp-color-picker{
+    width: 97%;
+    height: 24px;
+}
+.content-button-color input[type='button']{
+    margin: 6px 0;
+}
+.content-button-color .button.button-small.wp-picker-clear{
+    width: 227px;
+    display: block;
+}
+.content-button-color .wp-picker-container{
+    display: block;
+    margin-top: 30px;    
+}
+
+#share-with-media span{
+    margin-top: 30px;
+}
+
+#radio-align-full label,
+#radio-align-two-cols label,
+#radio-align-two-cols2 label,
+#to_include_padding_in_block label,
+#to_include_padding_in_block2 label,
+#table-cols label,
+#posts-number label,
+#style_color_button label,
+#radio-align-button label{
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 15px;
+}
+#make_text_cursive{
+    display: block;
+    margin-top: 15px;
+}
+#content_title_top,
+#content_title_top2{
+    display: inline-block;
+}
+#content_title_top label,
+#content_title_top2 label,
+#make_text_cursive label,
+#share-with-media label{
+    display: inline-block;
+    margin:0;
+    margin-left: 5px;
+}
+#content_title_top input[type="checkbox"],
+#content_title_top2 input[type="checkbox"],
+#make_text_cursive input[type="checkbox"],
+#share-with-media input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin:0;
+    margin-left: 15px;    
+}
+#make_text_cursive input[type="checkbox"],
+#share-with-media input[type="checkbox"]{
+    margin-left: 0;
+
+}
+
+#share-with-media input[type="checkbox"]{
+    margin-left: 5px;
+
+}
+
+#share-with-media #whatsapp{    
+    margin-left: 0;
+}
+
+#share-with-media span.note-below{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #6e6e6e;
+}
+.content-form-element input[type="checkbox"]:checked:before,
+#make_text_cursive input[type="checkbox"]:checked:before{
+    margin: 0px 0 0 -2px;   
+}
+
+.content-form-element input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    margin-bottom: 0;    
+}
+
+.content-form-element input[type="radio"]:checked{
+  background-color: #1e8cbe;
+  border: none;
+  width:20px;
+  height: 20px;
+}
+
+#table-cols,
+#posts-number{   
+    width: 800px;
+    clear: both;
+    display: block;
+    max-width: 99%;
+    margin-top: 15px;
+}
+.row-table{
+    display: inline-block;
+    position: relative;
+}
+.AddRowtable{
+    border: 1px solid #040404;   
+    display: inline-flex;
+    padding: 5px;
+    background: #eee;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 3px;
+}
+.AddRowtable:before{
+    content: '';
+    width: 15px;
+    height: 15px;    
+    background: url('../icons/plus_one_black_24_1x.png') center no-repeat;
+
+}
+
+/* ADD BUTTON STYLE*/
+
+#add_link{
+    width: 120px;
+    display: block;
+}
+.insert_button_style{
+    position: relative;
+}
+.insert_button_style:before {
+    content: 'Insert link';    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1px 5px;
+    left: 0;
+    right: 0;
+    background: #008ec2;
+    border-color: #006799;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.insert_button_style:hover:before{
+    background: #15a7dd;
+}
+
+.noshow{
+    display: none;
+
+}
+.hideme{
+    display: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+}
+
+
+@media only screen and (max-width: 768px) { 
+    .row-table .col1,
+    .row-table .col2{
+        width:100%;
+        border: 1px solid green;
+    }
+
+    #share-with-media input[type="checkbox"],
+    #share-with-media label{
+        margin-bottom: 10px;
+    }
+    .content-form-element input[type="checkbox"]:checked:before, 
+    #make_text_cursive input[type="checkbox"]:checked:before {
+        margin: -3px 0 0 -5px;
+    }
+}
